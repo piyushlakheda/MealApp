@@ -1,0 +1,21 @@
+// ignore_for_file: prefer_const_constructors, unused_local_variable
+import 'package:flutter/material.dart';
+
+class MealDetailScreen extends StatelessWidget {
+  static const routeName = '/meal-detail';
+
+  @override
+  Widget build(BuildContext context) {
+    final mealId = ModalRoute.of(context)?.settings.arguments as String;
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('$mealId'),
+      ),
+      body: Center(
+        child: Text(
+          'The meal - $mealId!',
+        ),
+      ),
+    );
+  }
+}
