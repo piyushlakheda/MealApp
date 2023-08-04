@@ -25,6 +25,7 @@ class MainDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.white,
       child: Column(
         children: [
           Container(
@@ -32,13 +33,13 @@ class MainDrawer extends StatelessWidget {
             width: double.infinity,
             padding: EdgeInsets.all(20),
             alignment: Alignment.centerLeft,
-            color: Theme.of(context).accentColor,
+            color: Colors.red,
             child: Text(
               'Cooking Up!',
               style: TextStyle(
-                fontWeight: FontWeight.w900,
+                fontWeight: FontWeight.bold,
                 fontSize: 30,
-                color: Theme.of(context).primaryColor,
+                color: Colors.white,
               ),
             ),
           ),
